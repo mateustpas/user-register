@@ -1,6 +1,6 @@
 package dev.mateustpas.user_register.infrastructure.repository;
 
-import dev.mateustpas.learning_spring.infrastructure.entity.Usuario;
+import dev.mateustpas.user_register.infrastructure.entity.Usuario;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
