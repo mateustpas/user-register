@@ -1,15 +1,13 @@
 package dev.mateustpas.user_register.infrastructure.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
 @Table(name="endereco")
 public class Endereco {
@@ -25,7 +23,9 @@ public class Endereco {
     @Column(name="rua", length=100)
     private String rua;
     @Column(name="numero")
-    private String numero;
+    private Long numero;
     @Column(name="complemento")
     private String complemento;
+    @Column(name="cep", length=9)
+    private String cep;
 }
